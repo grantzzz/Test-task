@@ -1,0 +1,34 @@
+.price-page {
+  background-color: #e1f0f8;
+  font-family: "Arial";
+  padding-bottom: 93px; }
+
+.price-page__wrapper {
+  margin: 0 auto;
+  width: 1145px; }
+
+.price-page__caption {
+  color: #4b4b4b;
+  font-family: "Arial";
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 5px; }
+
+.price-page__caption-descr {
+  color: #4b4b4b;
+  font-family: "Arial";
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 31px; }
+
+.price-page-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }

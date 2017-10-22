@@ -1,0 +1,106 @@
+.product {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 854px;
+  padding-left: 26px;
+  padding-top: 28px;
+  padding-bottom: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.product__img {
+  width: 200px;
+  margin-left: 62px;
+  margin-right: 90px;
+  position: relative; }
+
+.product__img-label {
+  position: absolute;
+  color: #a6a6a6;
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: 400;
+  bottom: -15px;
+  right: 25px; }
+
+.product__caption {
+  color: #484848;
+  font-family: "Arial";
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 32px; }
+
+.product__buy {
+  width: 475px; }
+
+.product__buy-features {
+  color: #484848;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 22px; }
+  .product__buy-features li {
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative; }
+    .product__buy-features li::before {
+      background-color: black;
+      border: 3px solid #eb5825;
+      border-radius: 50%;
+      content: "";
+      position: absolute;
+      left: -15px;
+      top: 5px; }
+
+.product__choose-color {
+  margin-bottom: 65px; }
+
+.product__choose-color-caption {
+  color: #484848;
+  font-family: "Arial";
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 22px; }
+
+.product__choose-color-descr {
+  color: 484848;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 44px;
+  width: 350px; }
+
+.product__colorpicker-check {
+  position: absolute;
+  top: -34px;
+  left: 15px;
+  display: none; }
+
+.product__colorpicker label {
+  position: relative;
+  cursor: pointer; }
+  .product__colorpicker label input {
+    display: none; }
+  .product__colorpicker label input:checked + .product__colorpicker-check {
+    display: block; }
+
+.product__buy-btn {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 13px 40px;
+  font-weight: 400; }
+
+.product__buy-help {
+  display: block;
+  margin-top: 20px;
+  color: #8a8a8a;
+  font-family: "Arial MT";
+  font-size: 14px;
+  font-weight: 400; }
