@@ -3,122 +3,252 @@
 <head>
 	<title>Test task</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.3/lory.js"></script>
 	
 </head>
-<body class="price-page">
-	<div class="price-page__wrapper">
-		<header class="price-header">
-			<a href="index.html" class="price-header__logo"><img src="img/logo.png" width="378" height="43" alt="Окнополис"></a>
-			<a class="price-header__price-calc">Рассчитать стоимость</a>
-			<div class="price-header__phone">
-				<span class="price-header__phone-schedule">с 9 до 21 без выходных</span>
-				<span class="price-header__phone-number">+7 495 534-65-33</span>
+<body class="main-page">
+	<div class="container">
+		<div class="sidebar">
+			<a href="" class="sidebar__social"><img src="img/social-logo.png" width="54" height="18" alt="социальные сети"></a>
+
+	        <ul class="sidebar__nav">
+	            <li class="sidebar__item"><a href="#">О компании</a></li>
+	            <li class="sidebar__item"><a href="#">О проблемах</a></li>
+	            <li class="sidebar__item"><a href="#">Каталог</a></li>
+	            <li class="sidebar__item"><a href="#">Где купить</a></li>
+	            <li class="sidebar__item"><a href="#">Вопрос-ответ</a></li>
+	            <li class="sidebar__item"><a href="#">On-line тест</a></li>
+	            <li class="sidebar__item"><a href="#">Контакты</a></li>
+	        </ul>
+	        <div class="sidebar__phone">
+	        	<a href=""tel:88000000000" class="sidebar__phone-hotline">Горячая линия<br>по России</a>
+	        	<a class="sidebar__phone-number" href="tel:88000000000">8-800-000-00-00</a>
+	        </div>
+    	</div>
+    <main class="main-content">
+    	<a href="#" data-toggle=".container" id="container__sidebar-toggle">
+			<span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+		</a>
+		<div class="mini-header">
+			<div class="mini-header__bausch-logo"><img src="img/bausch-logo.png" width="179" height="14" alt="Bausch+Lomb"></div>
+			<div class="mini-header__valeant-logo"><img src="img/valeant-logo.png" width="154" height="25"></div>
+			<div class="mini-header__question"><a href="#" class="mini-header__popup-toggle">Задать вопрос производителю</a></div>
+		</div>
+    	<section class="squares">
+  			<div class="squares__blue">
+  				<p class="squares__blue-caption">Защита глаз<br/>
+					при интенсивных нагрузках</p>
+				<span>Усталость</span>
+				<div class="squares__blue-meds">
+					
+					<div class="squares__blue-lutein-child"><img src="img/lutein-child.png"  width="88" height="57" alt="Лютеин-детский"></div>
+					<a class="squares__blue-lutein-child-dropdown" href="#">Лютеин детский</a>
+
+					<div class="squares__blue-lutein"><img src="img/lutein-complex.png" width="86" height="57" alt="Лютеин-комплекс"></div>
+					<a class="squares__blue-lutein-dropdown" href="#">Лютеин комплекс</a>
+
+					<div class="squares__blue-meds-more"><a href="#">Подробнее</a></div>
+
+				</div>
 			</div>
-			<nav class="main-nav">
-				<div class="main-nav__item"><a href="#">О компании</a></div>
-				<div class="main-nav__item main-nav__item--current"><a href="#">Цены</a></div>
-				<div class="main-nav__item"><a href="#">Услуги и продукты</a></div>
-				<div class="main-nav__item"><a href="#">Акции</a></div>
-				<div class="main-nav__item"><a href="#">Контакты</a></div>
-			</nav>
-		</header>
+  			<div class="squares__red">
+  				<p class="squares__red-caption">Укрепление сосудов<br>глаз</p>
+  				<div class="squares__red-more"><a href="#">Подробнее</a></div>
+  			</div>
+  			<div class="squares__green">
+  				<p class="squares__green-caption">Защита здорового зрения<br>на долгие годы</p>
+  				<div class="squares__green-more"><a href="#">Подробнее</a></div>
+  			</div>
+  			<div class="squares__yellow">
+  				<p class="squares__yellow-caption">Снижение риска развития<br>возрастных изменений глаз</p>
+  				<div class="squares__yellow-more"><a href="#">Подробнее</a></div>
+  			</div>
+    	</section>
 
-		
-			<h3 class="price-page__caption">Цветные пластиковые окна</h3>
-			<p class="price-page__caption-descr">Ламинируем профиль ПВХ для придания окнам цвета и фактуры дерева</p>
-		
+    	<section class="cause">
+    		
+	        <input type="radio" name="slider" id="slide-1" checked>
+    		<input type="radio" name="slider" id="slide-2">
+    		<input type="radio" name="slider" id="slide-3">
+    		<input type="radio" name="slider" id="slide-4">
+
+    		<label class="cause-slide__control cause-slide__control-1" for="slide-1">1</label>
+	         <label class="cause-slide__control cause-slide__control-2" for="slide-2">2</label>
+	         <label class="cause-slide__control cause-slide__control-3" for="slide-3">3</label>
+	          <label class="cause-slide__control cause-slide__control-4" for="slide-4">4</label>
+    		
+    		<div class="cause-slider__container">
+    		<div class="cause-slide">   
+	            <div class="cause-slide__left">
+	              <h2 class="cause-slide__caption">В чем причина<br>ухудшения зрения?</h2>
+	              <p class="cause-slide__descr">Любой свет, особенно интенсивный искусственный, повреждает глаза. Световые лучи, проходя сквозь глаз, фокусируются на сетчатке в области желтого пятна - особой области, которая отвечает за максимальную остроту зрения</p>
+	            </div>
+	            <div class="cause-slide__right">
+	              <img src="img/eye.png" width="455" height="368">
+	              <p class="cause-slide__reference"><b>Желтое пятно</b> (лат. macula lutea) —<br>место наибольшей остроты зрения<br> в сетчатке глаза. </p>
+	            </div>
+	            
+			</div>
+			<div class="cause-slide">   
+	            <div class="cause-slide__left">
+	              <h2 class="cause-slide__caption">В чем причина<br>ухудшения зрения?</h2>
+	              <p class="cause-slide__descr">Любой свет, особенно интенсивный искусственный, повреждает глаза. Световые лучи, проходя сквозь глаз, фокусируются на сетчатке в области желтого пятна - особой области, которая отвечает за максимальную остроту зрения</p>
+	            </div>
+	            <div class="cause-slide__right">
+	              <img src="img/eye.png" width="455" height="368">
+	              <p class="cause-slide__reference"><b>Желтое пятно</b> (лат. macula lutea) —<br>место наибольшей остроты зрения<br> в сетчатке глаза. </p>
+	            </div>
+	            
+			</div>
+			<div class="cause-slide">   
+	            <div class="cause-slide__left">
+	              <h2 class="cause-slide__caption">В чем причина<br>ухудшения зрения?</h2>
+	              <p class="cause-slide__descr">Любой свет, особенно интенсивный искусственный, повреждает глаза. Световые лучи, проходя сквозь глаз, фокусируются на сетчатке в области желтого пятна - особой области, которая отвечает за максимальную остроту зрения</p>
+	            </div>
+	            <div class="cause-slide__right">
+	              <img src="img/eye.png" width="455" height="368">
+	              <p class="cause-slide__reference"><b>Желтое пятно</b> (лат. macula lutea) —<br>место наибольшей остроты зрения<br> в сетчатке глаза. </p>
+	            </div>
+	            
+			</div>
+			<div class="cause-slide">   
+	            <div class="cause-slide__left">
+	              <h2 class="cause-slide__caption">В чем причина<br>ухудшения зрения?</h2>
+	              <p class="cause-slide__descr">Любой свет, особенно интенсивный искусственный, повреждает глаза. Световые лучи, проходя сквозь глаз, фокусируются на сетчатке в области желтого пятна - особой области, которая отвечает за максимальную остроту зрения</p>
+	            </div>
+	            <div class="cause-slide__right">
+	              <img src="img/eye.png" width="455" height="368">
+	              <p class="cause-slide__reference"><b>Желтое пятно</b> (лат. macula lutea) —<br>место наибольшей остроты зрения<br> в сетчатке глаза. </p>
+	            </div>
+	            
+			</div>
+			
+		</div>
+    	</section>
+    		
+    		<section class="risks">
+    			<h2 class="risks__caption">Группы риска:</h2>
+    			<h3 class="risks__sub-caption">Школьники и студенты</h3>
+    			<p class="risks__descr">В последнее десятилетие врачи отмечают печальную тенденцию: все чаще у детей школьного возраста выявляются болезни органов зрения. Сложный оптический прибор, идеально приспосабливающийся к изменчивым условиям окружающей среды, глаз оказался не подготовленным к современным реалиям.</p>
+    			<a class="risks__btn-more" href="#">Подробнее</a>
+    			<div class="risks__groups">
+    				<span class="risks__group">Работающие за компьютером</span>
+    				<span class="risks__group risks__group--current">Школьники и студенты</span>
+    				<span class="risks__group">Автолюбители</span>
+    				<span class="risks__group">Люди с повышенными зрительными нагрузками</span>
+    				<span class="risks__group">Туристы</span>
+    			</div>
+
+    		</section>
+
+    		<section class="test-and-map">
+    			<div class="test">
+    				<h2 class="test__caption">On-line тест</h2>
+    				<p class="test__descr">Мы предлагаем пройти небольшой тест, который поможет легко и комфортно проверить <b>остроту</b>, <b>контрастность</b> и <b>цветовосприятие</b> вашего зрения.</p>
+    				<a class="test__btn-pass" href="#">Пройти тест</a>
+    				<p class="test__reference">Если по результатам теста Вы отметите ухудшение зрения, Вам следует обратиться к офтальмологу за дополнительной консультацией.</p>
+    			</div>
+    			<div class="map">
+    				<h2 class="map__caption">Где купить</h2>
+    				<p class="map__descr">Препараты можно приобрести в аптеках по всей России, а так же в интернет аптеках.</p>
+    				<a class="map__btn-more" href="#">Подробнее</a>
+    			</div>
+    		</section>
+
+    </main>
+
+    <footer class="footer">
+    	<section class="warning">
+    		<h2 class="warning__caption">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ ОЗНАКОМЬТЕСЬ С ИНСТРУКЦИЕЙ И ПРОКОНСУЛЬТИРУЙТЕСЬ СО СПЕЦИАЛИСТОМ</h2>
+    	</section>
+    	<section class="contacts">
+    		<div class="contacts__wrapper">
+    			<img class="contacts__valeant-logo" src="img/valeant-logo.png" width="154" height="25" alt="Valeant">
+    			<p class="contacts__details">
+    				ООО «ВАЛЕАНТ», 115162, г. Москва, ул. Шаболовка, д. 31, стр. 5 Тел./&nbsp;Факс: +7 495 510-2879  www.valeant.com
+    			</p>
+    			<div class="contacts__itsoft">
+    				<a href="https://itsoft.ru">
+    					<img class="contacts__itsoft-logo" src="img/itsoft-logo.png">
+    					<div>
+    						<span class="contacts__itsoft-text"><span>Создание сайта</span><br>Веб-студия <b><i>itsoft</i></b></span>
+    					</div>
+    				</a>
+    			</div>
+    		</div>
+    	</section>
+    </footer>
+    <div class="question-popup">
+		<button class="question-popup__close" type="button" title="Закрыть">Закрыть</button>
+		<h3 class="question-popup__title">Задать вопрос</h3>
+		<form class="question-popup__form" action="https://" method="post">
+			<input class="question-popup__name" type="text" name="name" placeholder="Имя" required>
+			<input class="question-popup__email" type="email" name="email" placeholder="Ваш e-mail" required>
+			<span class="question-popup__form-error">Это поле должно содержать E-Mail в формате example@site.com</span>
+			<input class="question-popup__phone" type="tel" name="phone" placeholder="Ваш телефон" pattern="(\+?\d[- .]*){7,13}">
+			<span class="question-popup__form-error">Это поле должно содержать телефон в формате +71234567890</span>
+			<textarea class="question-popup__text" placeholder="Задайте Ваш вопрос" rows="6" required></textarea>
+			<button class="question-popup__btn" type="submit">Отправить</button>
+		</form>
+	</div>
+	</div>
 	
-		
 
-		<main class="price-page-main">
-			<aside class="aside-nav">
-				<h3 class="aside-nav__caption">Рекомендуем также</h3>
-				<a href="#" class="aside-nav__item">Edinburgh by REHAU</a>
-				<a href="#" class="aside-nav__item"> Estet by REHAU</a>
-				<a href="#" class="aside-nav__item">REHAU DELIGHT-Design</a>
-				<a href="#" class="aside-nav__item">REHAU BRILLIANT-Design</a>
-				<a href="#" class="aside-nav__item">REHAU Geneo</a>
-				<a href="#" class="aside-nav__item">Цветные окна</a>
-				<a href="#" class="aside-nav__item">Стеклопакеты</a>
-				<a href="#" class="aside-nav__item">Остекление балконов и лоджий</a>
-				<a href="#" class="aside-nav__item">Отделка и утепление балконов</a>
-				<a href="#" class="aside-nav__item">Балконные блоки</a>
-		</aside>
-			<section class="product">
-				<div class="product__caption">Создайте выразительный интерьер с цветными окнами REHAU</div>
-				<div class="product__img">
-					<img src="img/product.png" width="198" height="353" alt="Ирландский дуб">
-					<span class="product__img-label">Ирландский дуб</span>
-				</div>
-				<div class="product__buy">
-					<ul class="product__buy-features">
-						<li>Точная визуализация натурального дерева.</li>
-						<li>Яркие нестандартные цвета в тон или дополнение интерьера.</li>
-						<li>Разные фактуры для Ваших пластиковых окон.</li>
-					</ul>
-					<div class="product__choose-color">
-						<div class="product__choose-color-caption">Подберите цвет для своих окон:</div>
-						<div class="product__colorpicker">
-							<label><img src="img/color1.png" alt="color1"><input type="radio" name="colors"></label>
-							<label><img src="img/color2.png" alt="color2"><input type="radio" name="colors"><img class="product__colorpicker-check" src="img/check.svg" alt="checked"></label>
-							<label><img src="img/color3.png" alt="color3"><input type="radio" name="colors"><img class="product__colorpicker-check" src="img/check.svg" alt="checked"></label>
-							<label><img src="img/color4.png" alt="color4"><input type="radio" name="colors"><img class="product__colorpicker-check" src="img/check.svg" alt="checked"></label>
-							<label><img src="img/color5.png" alt="color5"><input type="radio" name="colors"><img class="product__colorpicker-check" src="img/check.svg" alt="checked"></label>
-							<label><img src="img/color6.png" alt="color6"><input type="radio" name="colors"><img class="product__colorpicker-check" src="img/check.svg" alt="checked"></label>
-							
-							<label><img src="img/color7.png" alt="color7"><input type="radio" name="colors"><img class="product__colorpicker-check" src="img/check.svg" alt="checked"></label>
-							
-							
 
-						</div>
-						<p class="product__choose-color-descr">Больше 50 вариантов  цветов и фактур спрашивайте у наших замерщиков</p>
-					</div>
-					<a href="#" class="product__buy-btn btn">Рассчитать со скидкой 70%</a>
-					<a href="#" class="product__buy-help">или отправить заявку и получить консультацию</a>
-					
-				</div>
-			</section>
+	<script type="text/javascript">
+					$(document).ready(function() {
+			  $("[data-toggle]").click(function() {
+			    var toggle_el = $(this).data("toggle");
+			    $(toggle_el).toggleClass("open-sidebar");
+			  });
+			});
 
-			<section class="product-about">
-				<div class="product-about__lamination">
-					<h4 class="product-about__lamination-caption">Зачем использовать ламинацию</h4>
-					<div class="product-about__lamination-descr">Чтобы придать внешнему виду окна оригинальную выразительность, специалисты применяют ламинацию – приём, при помощи которого можно декорировать своё жилье с учетом самых современных веяний дизайнерского искусства.</div>
-					<div class="product-about__lamination-descr">При помощи ламинации оконного профиля можно, например, со всей точностью воспроизвести оттенки и структуру древесины: при этом обеспечивается полная визуализация натурального дерева, точно имитирующая расположение волокон. Помимо имитации деревянных поверхностей, применяют пленку самых разных цветов и фактур.</div>	
-				</div>
+			var link = document.querySelector(".mini-header__popup-toggle"); 		
+			var popup = document.querySelector(".question-popup");
+			var form = document.querySelector(".question-popup__form");
+			var close = document.querySelector(".question-popup__close"); 
+			
 
-				<div class="product-about__process">
-					<h4 class="product-about__process-caption">Как окна становятся цветными?</h4>
-					<p class="product-about__process-descr product-about__process-descr-1">Собственно, процесс ламинации профиля ПВХ состоит в процедуре нанесения на его поверхность декоративных высокопрочных плёнок с применением специального клея и ламинирующих установок.</p>
-					<p class="product-about__process-descr product-about__process-descr-2">Плёнку прочно соединяют с профилем. При этом внешней стороне пленки свойственна высокая стойкость к повреждениям. В частности, цветное пластиковое окно, прошедшее процесс ламинации, стойко переносит температурные колебания в диапазоне от -80°С до +130°С, оно исключительно стойко к солнечному излучению.</p>
-					<p class="product-about__process-descr product-about__process-descr-3">Пластиковые окна, прошедшие процесс ламинации профилей, имеют срок службы гораздо больший, чем не ламинированные окна. В сравнении с окнами из массива дерева, они значительно дешевле.</p>
-				</div>
-				
-			</section>
+			link.addEventListener("click", function(event) { 
+			    event.preventDefault(); 
+			    popup.classList.add("question-popup--show"); 
+			    login.focus(); 
 
-			<section class="product-reviews">
-				<h3 class="product-reviews__caption">Отзывы о цветных пластиковых окнах</h3>
-				<a href="" class="product-reviews__more">посмотреть еще отзывы</a>
-				<div class="product-reviews__review">
-					
-					<div class="product-reviews__review-author">Алена,</div>
-					
-					<div class="product-reviews__review-author-about">
-						<span>Договор № 09.10.33512.13</span>
-						<span>Дата размещения: 13 декабря 2013 года</span>
-					</div>	
-					<img src="img/review-rating.png" alt="rating">
-					<p class="product-reviews__review-text">Поставили окна во всей квартире. Все очень понравилось)))компания на 5+. Все очень любезные,гибкая система скидок!!!буду советовать всем!!!Сервис был на высоте,во-первых с поставкой получилось быстрее,во-вторых два раза приезжал замерщик Алексей,ему большое спасибо...</p>
+		        if (storage) { 
+				login.value = storage;
+		      	password.focus(); 
+		    		} else { 
+		      	login.focus(); 
+		    	} 
 
-					<div class="product-reviews__review-expand"><span>прочитать полностью</span></div>
+ 			 }); 
 
-					<a href="#" class="product-reviews__review-send btn">оставить отзыв</a>
-				</div>
+ 			 close.addEventListener("click", function(event) { 
+			    event.preventDefault(); 
+			    popup.classList.remove("question-popup--show");
+			    popup.classList.remove("modal-error"); 
+			  });
 
-			</section>
-		</main>
+			  window.addEventListener("keydown", function(event){
+			  	if (event.keyCode === 27) {
+			  		if (popup.classList.contains("question-popup--show")) {
+			  		popup.classList.remove("question-popup--show"); 
+			  	}
+			  	}
+			  })
+			  
+			 
+			
+	</script>
+	
 
-	</div>	
+
+
 </body>
 </html>
