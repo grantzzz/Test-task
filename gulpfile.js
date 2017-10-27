@@ -11,7 +11,7 @@ var gulp = require('gulp');
 
 
 gulp.task('sass', function(){ 
-    return gulp.src('app/sass/**/*.scss')
+    return gulp.src('app/sass/main.scss')
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
